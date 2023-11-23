@@ -8,5 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="background">#ECF0F5</color>
-    <color name="toolbar_title">#003C68</color>
+    <color name="primaryBlue">#003C68</color>
+    <color name="name">#FF5151</color>
+    <color name="light_gray">#A6A7A7</color>
+    <color name="super_light_gray">#DBDDE2</color>
+
 </resources>

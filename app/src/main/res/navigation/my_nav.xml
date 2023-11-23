@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/newsFragment">
+
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="com.example.newsapp.ui.saved.SavedFragment"
+        android:label="SavedFragment" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.newsapp.ui.details.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.example.newsapp.ui.news.NewsFragment"
+        android:label="fragment_saved"
+        tools:layout="@layout/fragment_saved" >
+        <action
+            android:id="@+id/action_newsFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_newsFragment_to_savedFragment"
+            app:destination="@id/savedFragment" />
+    </fragment>
+</navigation>
